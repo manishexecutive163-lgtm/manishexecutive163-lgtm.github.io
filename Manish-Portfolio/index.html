@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manish Sharma — Growth Strategist &amp; Performance Marketer</title>
+<meta name="description" content="Manish Sharma — Top Rated growth strategist with 11+ years in performance marketing. Google Ads, Meta Ads, Microsoft Ads, email marketing and conversion tracking.">
+<meta property="og:title" content="Manish Sharma — Growth Strategist">
+<meta property="og:description" content="Performance marketing, email automation and tracking, connected into one growth system.">
+<meta property="og:image" content="logo-full-navy.webp">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F1F3D; --slate:#2F4A7A; --mist:#A9BCD6; --pale:#E6ECF4; --sand:#E7DFD0;
+  --ivory:#F7F4EE; --char:#2B2F36; --gray:#8A9099; --brass:#A88B5A; --line:#DDD6C8; --muted:#555B64;
+  --serif:'Newsreader',Georgia,serif; --sans:'Inter',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--ivory);color:var(--char);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+@media(min-width:760px){.wrap{padding:0 40px}}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;color:var(--navy);letter-spacing:-.01em;line-height:1.12}
+.lab{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.rule{width:36px;height:2px;background:var(--brass);margin:18px 0}
+.btn{display:inline-block;padding:13px 22px;border-radius:3px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--navy);transition:transform .15s,background .15s}
+.btn.solid{background:var(--navy);color:var(--ivory)}
+.btn.ghost{color:var(--navy)}
+.btn:hover{transform:translateY(-1px)}
+.btn.light{border-color:var(--ivory);color:var(--ivory)}
+.btn.light.solid{background:var(--ivory);color:var(--navy)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(247,244,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:30px;width:auto}
+.brand span{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--navy)}
+.links{display:flex;align-items:center;gap:26px;font-size:14px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--navy)}
+.links .btn{color:var(--ivory);padding:9px 16px}
+@media(max-width:760px){.links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:76px 0 64px}
+.hero-grid{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.35fr 1fr}}
+.hero h1{font-size:clamp(40px,6.2vw,70px);margin-top:16px}
+.hero h1 em{font-style:italic;color:var(--slate)}
+.lede{font-size:clamp(17px,1.9vw,19px);color:var(--muted);max-width:56ch}
+.hero .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.badges{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px;font-size:13px;color:var(--muted)}
+.badges b{color:var(--navy);font-weight:600}
+.badges i{font-style:normal;color:var(--brass)}
+
+.hero-card{background:var(--navy);color:var(--ivory);border-radius:6px;padding:34px 30px;position:relative;overflow:hidden}
+.hero-card img{width:68%;max-width:260px;margin:0 auto 26px}
+.hero-card .lab{color:var(--mist)}
+.hero-card h3{color:var(--ivory);font-size:22px;margin:8px 0 18px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase}
+.flow span{border:1px solid var(--mist);color:var(--mist);padding:6px 8px;border-radius:3px}
+.flow span.on{border-color:var(--brass);color:var(--brass)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(min-width:760px){.stats{grid-template-columns:repeat(5,1fr)}}
+.stats div{padding:24px 16px 24px 0}
+@media(min-width:760px){.stats div+div{padding-left:22px;border-left:1px solid var(--line)}}
+.stats b{display:block;font-family:var(--serif);font-weight:500;font-size:34px;color:var(--navy);line-height:1.1}
+.stats span{font-size:13px;color:var(--muted)}
+
+section{padding:88px 0}
+.head{display:grid;gap:14px;margin-bottom:44px}
+@media(min-width:900px){.head{grid-template-columns:1fr 1fr;align-items:end}}
+.head h2{font-size:clamp(30px,4.2vw,46px);margin-top:10px}
+.head p{color:var(--muted);max-width:50ch}
+
+/* philosophy band */
+.band{background:var(--navy);color:var(--ivory);padding:84px 0}
+.band .lab{color:var(--mist)}
+.band h2{color:var(--ivory);font-size:clamp(30px,4.6vw,52px);max-width:20ch;margin-top:12px}
+.band h2 em{color:var(--brass);font-style:italic}
+.band p{color:var(--mist);max-width:60ch;font-size:17px}
+.chain{margin-top:44px;color:var(--mist)}
+.chain svg{width:100%;height:auto;max-width:760px}
+.chain text{font-family:var(--mono);font-size:10px;letter-spacing:.08em;fill:var(--mist);text-transform:uppercase}
+
+/* services */
+.svcs{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:760px){.svcs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svcs{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--ivory);padding:32px 28px}
+.svc .ic{width:40px;height:40px;color:var(--slate);margin-bottom:22px}
+.svc h3{font-size:23px;margin-bottom:10px}
+.svc p{color:var(--muted);font-size:15px}
+.svc .tags{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);margin-top:18px}
+.svc.alt{background:var(--sand)}
+
+/* work */
+.cases{display:grid;gap:18px}
+@media(min-width:900px){.cases{grid-template-columns:repeat(2,1fr)}}
+.case{background:#fff;border:1px solid var(--line);border-radius:6px;padding:30px 28px}
+.case.big{background:var(--pale);border-color:var(--pale)}
+@media(min-width:900px){.case.big{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.4fr;gap:40px}}
+.case h3{font-size:24px;margin:10px 0 4px}
+.case .where{font-size:14px;color:var(--gray);margin-bottom:18px}
+.case dl{display:grid;gap:14px;font-size:15px}
+.case dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.case dd{margin-top:3px}
+.more{display:grid;gap:0;margin-top:30px}
+@media(min-width:760px){.more{grid-template-columns:1fr 1fr;column-gap:40px}}
+.more div{border-top:1px solid var(--line);padding:16px 0;font-size:15px;color:var(--muted)}
+.more b{color:var(--navy);font-weight:600}
+
+/* testimonials */
+.quotes-bg{background:var(--sand)}
+.quotes{display:grid;gap:18px}
+@media(min-width:760px){.quotes{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.q{background:var(--ivory);border-radius:6px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.q blockquote{font-family:var(--serif);font-size:20px;line-height:1.35;color:var(--navy)}
+.q .who{font-size:13px;color:var(--muted)}
+.q .who b{display:block;color:var(--char);font-weight:600}
+.stars{color:var(--brass);letter-spacing:2px;font-size:13px}
+
+/* process */
+.steps{display:grid}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{border-top:2px solid var(--navy);padding:22px 22px 26px 0}
+@media(min-width:760px){.step+.step{padding-left:22px}}
+.step .n{font-family:var(--serif);font-size:44px;color:var(--slate);line-height:1}
+.step h3{font-size:21px;margin:14px 0 8px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+/* tools */
+.tools{display:flex;flex-wrap:wrap;gap:10px}
+.tools span{border:1px solid var(--line);background:#fff;padding:9px 15px;border-radius:3px;font-size:14px;font-weight:500;color:var(--navy)}
+
+/* contact */
+.contact{background:var(--navy);color:var(--ivory);border-radius:6px;padding:56px 26px;text-align:center;margin-bottom:80px}
+@media(min-width:760px){.contact{padding:84px 60px}}
+.contact img{height:54px;width:auto;margin:0 auto 26px}
+.contact h2{color:var(--ivory);font-size:clamp(30px,5vw,52px);max-width:18ch;margin:0 auto 16px}
+.contact p{color:var(--mist);max-width:52ch;margin:0 auto 32px}
+.contact .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.contact .rule{margin:0 auto 22px}
+
+footer{border-top:1px solid var(--line);padding:28px 0 44px;font-size:13px;color:var(--gray)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+footer .brand img{height:24px}
+footer .brand span{font-size:16px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="brand"><img src="mark-navy.webp" alt="MS monogram"><span>Manish Sharma</span></a>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="btn solid">Work with me</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="lab">Growth Strategist · Performance Marketing</div>
+        <h1>Most businesses don't have a marketing problem. They have a <em>growth system</em> problem.</h1>
+        <div class="rule"></div>
+        <p class="lede">I'm Manish Sharma. For 11+ years I've helped businesses in the US, UK, Europe and Australia turn paid ads, email and tracking into one connected system that brings in leads and sales every month.</p>
+        <div class="btns">
+          <a class="btn solid" href="https://www.upwork.com/freelancers/~015e1300fe81b67b30" target="_blank" rel="noopener">Hire me on Upwork</a>
+          <a class="btn ghost" href="#work">See selected work</a>
+        </div>
+        <div class="badges">
+          <span><i>★★★★★</i> <b>5.0</b> from 55 reviews</span>
+          <span><b>Top Rated</b> on Upwork</span>
+          <span><b>100%</b> Job Success</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="logo-full-light.webp" alt="Manish Sharma — Growth Strategist, Marketing Expert">
+        <div class="lab">The framework</div>
+        <h3>Acquire → Convert → Nurture → Measure</h3>
+        <div class="flow"><span>Google Ads</span><span>Meta Ads</span><span>Email</span><span class="on">Revenue</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div><b>11+</b><span>Years in digital marketing</span></div>
+    <div><b>10+</b><span>Years Top Rated on Upwork</span></div>
+    <div><b>67</b><span>Upwork projects</span></div>
+    <div><b>1.3K</b><span>Hours billed on Upwork</span></div>
+    <div><b>100%</b><span>Job Success Score</span></div>
+  </div>
+</div>
+
+<div class="band" style="margin-top:88px">
+  <div class="wrap">
+    <div class="lab">Growth philosophy</div>
+    <h2>Don't ask which channel is winning. Ask whether the <em>system</em> is working.</h2>
+    <div class="rule"></div>
+    <p>Great click-through rates mean nothing if the landing page leaks, the follow-up never happens, or the tracking counts the wrong thing. I fix the whole chain, then scale what works.</p>
+    <div class="chain" aria-hidden="true">
+      <svg viewBox="0 0 640 90">
+        <line x1="30" y1="34" x2="610" y2="34" stroke="#A9BCD6" stroke-width="1.5"/>
+        <g fill="#0F1F3D" stroke="#A9BCD6" stroke-width="1.5">
+          <circle cx="30" cy="34" r="10"/><circle cx="175" cy="34" r="10"/><circle cx="320" cy="34" r="10"/><circle cx="465" cy="34" r="10"/>
+        </g>
+        <circle cx="610" cy="34" r="10" fill="#A88B5A"/>
+        <text x="30" y="72" text-anchor="middle">Acquire</text>
+        <text x="175" y="72" text-anchor="middle">Convert</text>
+        <text x="320" y="72" text-anchor="middle">Follow-up</text>
+        <text x="465" y="72" text-anchor="middle">Retain</text>
+        <text x="610" y="72" text-anchor="middle">Measure</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="lab">01 · Services</div><h2>What I do</h2></div>
+      <p>Hands-on execution, not just advice. Every engagement ends with a clear, plain-language report you can share with your team.</p>
+    </div>
+    <div class="svcs">
+      <div class="svc">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="17" cy="17" r="10"/><line x1="24.5" y1="24.5" x2="34" y2="34"/><polyline points="12,20 16,15 19,18 23,13"/></svg>
+        <h3>Google &amp; Microsoft Ads</h3>
+        <p>Search, Performance Max and Microsoft Advertising — account structure, keyword intent, match types, ad copy and search-term cleanup.</p>
+        <div class="tags">Search · PMax · Microsoft Ads</div>
+      </div>
+      <div class="svc alt">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="28" height="28" rx="3"/><circle cx="20" cy="20" r="7"/><circle cx="29" cy="11" r="1.2" fill="currentColor"/></svg>
+        <h3>Meta Ads</h3>
+        <p>Facebook and Instagram campaigns for lead generation and sales — objectives, audiences, Dynamic Creative, carousel, banner and reel testing.</p>
+        <div class="tags">Lead gen · Creative testing · Scaling</div>
+      </div>
+      <div class="svc">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="10" width="30" height="21" rx="2"/><polyline points="5,12 20,23 35,12"/></svg>
+        <h3>Email Marketing &amp; Automation</h3>
+        <p>Klaviyo flows and campaigns, multi-market email programmes, and cold email setup with domain authentication and deliverability fixes.</p>
+        <div class="tags">Klaviyo · Flows · Deliverability</div>
+      </div>
+      <div class="svc alt">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="34" x2="34" y2="34"/><rect x="9" y="22" width="5" height="12"/><rect x="18" y="15" width="5" height="19"/><rect x="27" y="8" width="5" height="26"/></svg>
+        <h3>Tracking &amp; Analytics</h3>
+        <p>GA4 and Google Tag Manager set up properly — form, call and WhatsApp conversions, plus cross-platform attribution checks.</p>
+        <div class="tags">GA4 · GTM · Attribution</div>
+      </div>
+      <div class="svc">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 32 L8 10 L20 22 L32 8"/><polyline points="25,8 32,8 32,15"/></svg>
+        <h3>Audits &amp; Growth Plans</h3>
+        <p>Full account audits and written marketing plans that show exactly where budget leaks and what to fix first.</p>
+        <div class="tags">Audits · Strategy · Reporting</div>
+      </div>
+      <div class="svc alt">
+        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="22" y="6" width="12" height="12" rx="2"/><rect x="6" y="22" width="12" height="12" rx="2"/><rect x="22" y="22" width="12" height="12" rx="2"/></svg>
+        <h3>Social Media &amp; Creative</h3>
+        <p>Social media management and ad creatives — carousels, flyers, banners and reels built to be tested, not just posted.</p>
+        <div class="tags">Instagram · Facebook · Ad creative</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="lab">02 · Selected work</div><h2>Recent client projects</h2></div>
+      <p>Client names are kept private. Full details are available on request.</p>
+    </div>
+
+    <div class="cases">
+      <article class="case big">
+        <div>
+          <div class="lab">Meta Ads · Growth operator</div>
+          <h3>High-volume used-car dealer</h3>
+          <p class="where">Fresno, California</p>
+        </div>
+        <dl>
+          <div><dt>Challenge</dt><dd>Four live campaigns competing with each other — overlapping audiences and objectives that didn't match how the business sells (cash-only, leads through Instagram DMs).</dd></div>
+          <div><dt>What I did</dt><dd>Audited every campaign, removed the audience overlap, realigned objectives to messaging and planned a clearance campaign with Meta Dynamic Creative. I now run the account, testing banner and reel ads for each vehicle.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="lab">Email marketing</div>
+        <h3>Multi-country email programme</h3>
+        <p class="where">UK, Denmark, Sweden, Netherlands</p>
+        <dl>
+          <div><dt>What I did</dt><dd>Planned and managed email campaigns to promote products across several European markets.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="lab">Email deliverability</div>
+        <h3>Cold email infrastructure fix</h3>
+        <p class="where">Outreach agency</p>
+        <dl>
+          <div><dt>What I did</dt><dd>Resolved sending errors, set up SMTP with IP rotation for Instantly.io and sorted out domain authentication.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="lab">Tracking · GA4 &amp; GTM</div>
+        <h3>Multi-platform attribution review</h3>
+        <p class="where">Trampoline park, Illinois</p>
+        <dl>
+          <div><dt>What I did</dt><dd>Documented why Google Ads, Meta, GA4 and the booking platform reported different numbers, alongside a full marketing plan.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case">
+        <div class="lab">Google Tag Manager</div>
+        <h3>Tracking rebuild after a domain move</h3>
+        <p class="where">IT services company, India</p>
+        <dl>
+          <div><dt>What I did</dt><dd>Fixed broken form tracking with an Element Visibility trigger and added WhatsApp and call-click conversions.</dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <div class="more">
+      <div><b>Healthcare app launch</b> — Digital marketing for an AI psychiatry and e-learning platform.</div>
+      <div><b>Metal recycler, Sydney</b> — Google Ads audit and a plan to consolidate four campaigns into two.</div>
+      <div><b>Chiropractic clinic, NSW</b> — Microsoft Ads audit: tracking gaps, disapprovals, low-intent terms.</div>
+      <div><b>Automotive A/C specialist, Sydney</b> — Google Ads report with keyword expansion and auction insights.</div>
+      <div><b>Real estate firm, Georgia</b> — Full digital marketing plan across Meta, Google and social.</div>
+      <div><b>Luxury home décor brand</b> — Banner creatives and an animated reel for ads.</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="quotes-bg">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="lab">03 · Client feedback</div><h2>What clients say</h2></div>
+      <p>Excerpts from verified reviews on Upwork, where I hold a 5.0 rating across 55 reviews.</p>
+    </div>
+    <div class="quotes">
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"Manish did an amazing job running my ads and creating a variety of flyers."</blockquote></div><div class="who"><b>Colton J.</b>Meta Ads, used-car business</div></div>
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"This guy knows how to work the ads manager. I like working with him."</blockquote></div><div class="who"><b>Lauwrens K.</b>Meta Ads &amp; Klaviyo setup</div></div>
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"A knowledgeable social media advertising specialist with a good understanding of campaign structure."</blockquote></div><div class="who"><b>Yana S.</b>Carousel ad campaigns</div></div>
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"Manish did an outstanding job managing our email marketing campaigns."</blockquote></div><div class="who"><b>Manish G.</b>Email marketing, European markets</div></div>
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"Communication was clear throughout."</blockquote></div><div class="who"><b>Will J.</b>Cold email &amp; deliverability</div></div>
+      <div class="q"><div><div class="stars">★★★★★</div><blockquote style="margin-top:12px">"Manish is honest, professional, serious, and reliable."</blockquote></div><div class="who"><b>Giorgio G.</b>Social media management</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="lab">04 · Process</div><h2>How I work</h2></div>
+      <p>The same four steps whether it's a one-off audit or ongoing management.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Audit</h3><p>Review account structure, spend, search terms, creatives and the funnel behind them.</p></div>
+      <div class="step"><div class="n">02</div><h3>Fix tracking</h3><p>Make sure every lead, call, booking and sale is counted once, correctly.</p></div>
+      <div class="step"><div class="n">03</div><h3>Rebuild the system</h3><p>Cut waste, align objectives, connect ads to email follow-up and set up real tests.</p></div>
+      <div class="step"><div class="n">04</div><h3>Report &amp; scale</h3><p>Plain-language reporting on what changed and why, then scale what's working.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:28px"><div><div class="lab">05 · Toolkit</div><h2>Tools I work in</h2></div></div>
+    <div class="tools">
+      <span>Google Ads</span><span>Meta Ads Manager</span><span>Microsoft Advertising</span><span>Google Analytics 4</span><span>Google Tag Manager</span><span>Klaviyo</span><span>Instantly.io</span><span>Looker Studio</span><span>Keyword Planner</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="contact" id="contact">
+    <img src="mark-light.webp" alt="">
+    <div class="rule"></div>
+    <h2>Let's find what's leaking in your growth system.</h2>
+    <p>Tell me about your business and your current ads. I'll reply with the first three things I'd look at.</p>
+    <div class="btns">
+      <a class="btn light solid" href="https://www.upwork.com/freelancers/~015e1300fe81b67b30" target="_blank" rel="noopener">Hire me on Upwork</a>
+      <a class="btn light" href="https://www.linkedin.com/in/manish-sharma-05b8b818b/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn light" href="mailto:YOUR-EMAIL@example.com">Email me</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="brand"><img src="mark-navy.webp" alt=""><span>Manish Sharma</span></a>
+    <span>Growth Strategist · Himachal Pradesh, India · Working worldwide</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
