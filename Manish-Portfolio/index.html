@@ -530,6 +530,14 @@ footer .base a{color:#C0CADA}
 @media (max-width:980px){.rc-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.rc-grid{grid-template-columns:1fr}}
 .ww-chips.mk span{font-family:var(--f-mono);font-size:14px;padding:8px 14px;background:var(--tint);color:var(--accent-ink);border-color:transparent}
+.sent{flex-direction:row!important;align-items:flex-start;gap:14px!important}
+.sent.ok{background:color-mix(in srgb,#2E8B57 10%,var(--surface));border-color:color-mix(in srgb,#2E8B57 40%,transparent)}
+.sent.fail{background:color-mix(in srgb,#C2463B 8%,var(--surface));border-color:color-mix(in srgb,#C2463B 35%,transparent)}
+.sent-ic{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;background:#2E8B57}
+.sent.fail .sent-ic{background:#C2463B}
+.sent-ic svg{width:16px;height:16px}
+.sent div{display:flex;flex-direction:column;gap:4px}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
 </style>
 
 </head>
@@ -584,7 +592,7 @@ footer .base a{color:#C0CADA}
       <div class="wrap">
         <div class="cred"><strong data-count="11" data-suf="+">11+</strong><span>Years of hands-on experience</span></div>
         <div class="cred"><strong data-count="200" data-suf="+">200+</strong><span>Global clients</span></div>
-        <div class="cred"><strong>$1K–$100K+</strong><span>Monthly ad budgets managed</span></div>
+        <div class="cred"><strong>$1K-$100K+</strong><span>Monthly ad budgets managed</span></div>
         <div class="cred"><strong data-count="100" data-suf="%">100%</strong><span>Upwork Job Success Score</span></div>
         <div class="cred"><strong>Top Rated</strong><span>Upwork, 10+ years</span></div>
       </div>
@@ -822,15 +830,14 @@ footer .base a{color:#C0CADA}
       <div class="field"><label for="f-svc">Service of interest</label>
         <select id="f-svc" name="svc"><option>Google Ads &amp; Microsoft Advertising</option><option>Meta Ads &amp; LinkedIn Advertising</option><option>Email, SMS &amp; Lifecycle Automation</option><option>CRM, Cold Outreach &amp; Lead Generation</option><option>Landing Pages, CRO &amp; Funnels</option><option>Analytics, Tracking &amp; Reporting</option><option>Not sure yet, need a review</option></select></div>
       <div class="field full"><label for="f-budget">Monthly marketing budget (optional)</label>
-        <select id="f-budget" name="budget"><option value="">Prefer not to say</option><option>Under $1K</option><option>$1K – $5K</option><option>$5K – $20K</option><option>$20K – $50K</option><option>$50K – $100K+</option></select></div>
+        <select id="f-budget" name="budget"><option value="">Prefer not to say</option><option>Under $1K</option><option>$1K - $5K</option><option>$5K - $20K</option><option>$20K - $50K</option><option>$50K - $100K+</option></select></div>
       <div class="field full"><label for="f-msg">Biggest current challenge</label><textarea id="f-msg" name="msg" placeholder="e.g. Leads are coming in but very few convert to sales"></textarea></div>
       <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" hidden>
       <div class="actions"><button class="btn btn-navy" type="submit" id="f-submit">Send message <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
       <div id="sent" hidden></div>
     </form>
     <div class="channels">
-      <a class="ch" href="mailto:manishexecutive163@gmail.com"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="16" height="12" rx="1.5"/><path d="m2 5 8 6 8-6"/></svg></span><span class="ct"><small>Email</small><strong>Email me</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
-      <a class="ch" href="tel:+919882187338"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 3h3l1.5 4-2 1.2a9 9 0 0 0 5.3 5.3l1.2-2 4 1.5v3a2 2 0 0 1-2 2A14 14 0 0 1 2 5a2 2 0 0 1 2-2z"/></svg></span><span class="ct"><small>Phone</small><strong>Call me</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
+      <a class="ch" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=manishexecutive163@gmail.com&amp;su=Enquiry%20from%20your%20portfolio" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="16" height="12" rx="1.5"/><path d="m2 5 8 6 8-6"/></svg></span><span class="ct"><small>Email</small><strong>Email me</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
       <a class="ch" href="https://www.linkedin.com/in/manish-sharma-05b8b818b/" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M4 7h3v9H4zM5.5 3a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zM9 7h2.9v1.3c.4-.8 1.4-1.5 2.9-1.5 3 0 3.2 2 3.2 4.4V16h-3v-4.3c0-1 0-2.4-1.5-2.4S12 10.5 12 11.6V16H9z"/></svg></span><span class="ct"><small>LinkedIn</small><strong>Visit me on LinkedIn</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
       <a class="ch" href="https://www.upwork.com/freelancers/~015e1300fe81b67b30?mp_source=share" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5v5a4 4 0 0 0 8 0V5M11 10c1 4 3 5 5 5a3 3 0 0 0 0-6c-2 0-3 1-4 3l-2 6"/></svg></span><span class="ct"><small>Upwork · Top Rated · 100% JSS</small><strong>Hire me on Upwork</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
       <div class="sig-card"><div class="sign" aria-hidden="true">Manish Sharma</div><div class="rule"></div><p>Performance Marketing Specialist · India · Working worldwide</p></div>
@@ -846,7 +853,7 @@ footer .base a{color:#C0CADA}
       <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
       <a href="#results">Results gallery</a><a href="#case-studies">Case studies</a><a href="#industries">Industries</a>
       <a href="#toolkit">Toolkit</a><a href="#process">Process</a><a href="#contact">Contact</a>
-      <a href="https://www.linkedin.com/in/manish-sharma-05b8b818b/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.upwork.com/freelancers/~015e1300fe81b67b30?mp_source=share" target="_blank" rel="noopener">Upwork ↗</a><a href="mailto:manishexecutive163@gmail.com">Email me</a>
+      <a href="https://www.linkedin.com/in/manish-sharma-05b8b818b/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.upwork.com/freelancers/~015e1300fe81b67b30?mp_source=share" target="_blank" rel="noopener">Upwork ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=manishexecutive163@gmail.com&amp;su=Enquiry%20from%20your%20portfolio" target="_blank" rel="noopener">Email me</a>
     </div>
     <div class="base"><span>© 2026 Manish Sharma. All client identities kept private.</span><span>Results describe historical reporting periods, not guaranteed future outcomes.</span></div>
   </div>
@@ -889,13 +896,13 @@ const SERVICES=[
 const RESULTS={
  google:{label:'Google Ads',title:'Google Ads',intro:'Search, Shopping, Performance Max and call-focused accounts across eCommerce and lead generation.',items:[
   {chips:['eCommerce'],m:'4.92x',ms:'ROAS',t:'eCommerce account: Search + Performance Max',d:'A Google Ads eCommerce account recorded $15,225+ in conversion value from approximately $3,095 in ad spend, with 775+ conversions. Within the account, a Search campaign reached 6.55x ROAS and Performance Max reached 5.83x.',p:'Reporting period · June 2023',img:[1],cap:'Google Ads campaign performance'},
-  {chips:['Lead generation'],m:'8.74K',ms:'conversions',t:'High-volume lead generation account',d:'A lead generation account recorded 8.74K tracked conversions, 3.83M impressions and approximately $2.40 per conversion on about $20.7K spend.',p:'Reporting period · Mar 1 – Oct 14, 2026',img:[2],cap:'Google Ads account overview'},
-  {chips:['Lead generation'],m:'6.39K',ms:'conversions',t:'Lead generation at scale',d:'Another account recorded 6.39K tracked conversions across 5.14M impressions, at approximately $1.30 per conversion, with 156 phone calls tracked.',p:'Reporting period · May 30, 2025 – Feb 28, 2026',img:[3],cap:'Google Ads account overview'},
-  {chips:['Search visibility'],m:'78.40%',ms:'top-of-page',t:'Auction insights',d:'A 78.40% top-of-page rate with 18.22% impression share shows why placement quality and market coverage should be evaluated separately.',n:'This is an auction placement metric, not a conversion or revenue result.',p:'Reporting period · Mar 1 – Oct 14, 2026',img:[4],cap:'Auction insights · competitor domains hidden'},
-  {chips:['Call-focused'],m:'536',ms:'phone calls',t:'Call-focused acquisition',d:'A call-oriented account tracked 536 phone calls and 2.98K total conversions on about $4.45K spend.',p:'Reporting period · Nov 26, 2025 – Oct 14, 2026',img:[5],cap:'Calls and conversion overview'}
+  {chips:['Lead generation'],m:'8.74K',ms:'conversions',t:'High-volume lead generation account',d:'A lead generation account recorded 8.74K tracked conversions, 3.83M impressions and approximately $2.40 per conversion on about $20.7K spend.',p:'Reporting period · Mar 1 - Oct 14, 2026',img:[2],cap:'Google Ads account overview'},
+  {chips:['Lead generation'],m:'6.39K',ms:'conversions',t:'Lead generation at scale',d:'Another account recorded 6.39K tracked conversions across 5.14M impressions, at approximately $1.30 per conversion, with 156 phone calls tracked.',p:'Reporting period · May 30, 2025 - Feb 28, 2026',img:[3],cap:'Google Ads account overview'},
+  {chips:['Search visibility'],m:'78.40%',ms:'top-of-page',t:'Auction insights',d:'A 78.40% top-of-page rate with 18.22% impression share shows why placement quality and market coverage should be evaluated separately.',n:'This is an auction placement metric, not a conversion or revenue result.',p:'Reporting period · Mar 1 - Oct 14, 2026',img:[4],cap:'Auction insights · competitor domains hidden'},
+  {chips:['Call-focused'],m:'536',ms:'phone calls',t:'Call-focused acquisition',d:'A call-oriented account tracked 536 phone calls and 2.98K total conversions on about $4.45K spend.',p:'Reporting period · Nov 26, 2025 - Oct 14, 2026',img:[5],cap:'Calls and conversion overview'}
  ]},
  meta:{label:'Meta Ads',title:'Meta Ads',intro:'Messaging, purchase, retargeting and prospecting campaigns across Facebook and Instagram.',items:[
-  {chips:['Messaging'],m:'2,469',ms:'conversations',t:'Messaging campaigns',d:'Three Meta messaging campaign groups generated 1,094, 745 and 630 conversations, at $5.77, $5.59 and $6.10 per conversation respectively.',n:'These are messaging outcomes, not confirmed sales.',p:'Reporting period · May 1 – Oct 14, 2026',img:[6],cap:'Meta messaging dashboard'},
+  {chips:['Messaging'],m:'2,469',ms:'conversations',t:'Messaging campaigns',d:'Three Meta messaging campaign groups generated 1,094, 745 and 630 conversations, at $5.77, $5.59 and $6.10 per conversation respectively.',n:'These are messaging outcomes, not confirmed sales.',p:'Reporting period · May 1 - Oct 14, 2026',img:[6],cap:'Meta messaging dashboard'},
   {chips:['eCommerce','Retargeting'],m:'$7,806',ms:'conversion value',t:'Purchase campaigns and retargeting',d:'A selected sales campaign recorded 67 purchases at $22.41 per purchase and $7,806 in conversion value. Separate retargeting campaigns recorded 268, 89 and 63 purchases.',n:'These results come from different campaign views and should not be aggregated as one account total.',p:'Sales and retargeting views',img:[7,8],cap:'Meta sales and retargeting dashboards'},
   {chips:['Prospecting','UK expansion'],m:'$0.04',ms:'CPC',t:'Prospecting and market expansion',d:'Campaign structures included cold-audience prospecting, lookalikes, engaged-visitor retargeting and expansion into the UK market. One campaign recorded 257 cold-audience results at £2.60 each; another delivered 8,579 link clicks at $0.04 CPC.',p:'Prospecting, retargeting and UK campaigns',img:[9,10],cap:'Prospecting and campaign results'}
  ]},
@@ -906,8 +913,8 @@ const RESULTS={
   {chips:['SMS'],m:'$15,142',ms:'top campaign',t:'SMS campaigns with five-figure revenue',d:'Selected seasonal SMS campaigns recorded $15,142, $12,157 and $11,195 in revenue, with the dashboard also documenting conversion rates for each campaign.',n:'These figures are campaign-attributed revenue, not incremental lift.',p:'SMS campaign blasts',img:[15],cap:'SMS campaign blasts'}
  ]},
  linkedin:{label:'LinkedIn & CRO',title:'LinkedIn & CRO',intro:'Organic LinkedIn growth for a health-tech brand, and conversion optimization for an edtech landing page.',items:[
-  {chips:['LinkedIn organic','Health-tech'],m:'278,040',ms:'impressions',t:'LinkedIn organic growth',d:'A health-tech LinkedIn content program moved from a baseline of 833 impressions and 19 engagements to 278,040 impressions and 3,100 engagements in a subsequent 90-day reporting period. It reached 12,045 followers and a 30–40% rise in website sign-ups. Audience analysis found 66% of the audience came from target industries.',p:'Baseline vs. 90-day reporting period',img:[16,17,18,19],cap:'LinkedIn performance, audience and creative'},
-  {chips:['Landing page CRO','Edtech'],m:'60–70%',ms:'relative uplift',t:'Landing page conversion optimization',d:'For an edtech course landing page, messaging was reorganized around career outcomes, proof, objections and a two-step CTA path, with a reported 60–70% relative conversion uplift.',p:'Full write-up in the landing page case study',img:[],cro:true,cs:'landing'}
+  {chips:['LinkedIn organic','Health-tech'],m:'278,040',ms:'impressions',t:'LinkedIn organic growth',d:'A health-tech LinkedIn content program moved from a baseline of 833 impressions and 19 engagements to 278,040 impressions and 3,100 engagements in a subsequent 90-day reporting period. It reached 12,045 followers and a 30-40% rise in website sign-ups. Audience analysis found 66% of the audience came from target industries.',p:'Baseline vs. 90-day reporting period',img:[16,17,18,19],cap:'LinkedIn performance, audience and creative'},
+  {chips:['Landing page CRO','Edtech'],m:'60-70%',ms:'relative uplift',t:'Landing page conversion optimization',d:'For an edtech course landing page, messaging was reorganized around career outcomes, proof, objections and a two-step CTA path, with a reported 60-70% relative conversion uplift.',p:'Full write-up in the landing page case study',img:[],cro:true,cs:'landing'}
  ]}
 };
 
@@ -917,11 +924,11 @@ const CASES=[
   points:['RFM segmentation across the full customer base','Customer lifetime value of $204 and average order value of $71.91 surfaced from the dashboard','At-risk and lost segments prioritized for win-back','Seasonal SMS campaigns of $15,142, $12,157 and $11,195 in attributed revenue'],
   ev:[14,15],tags:['Patch Retention','RFM','SMS','Win-back'],res:'results-email'},
  {id:'linkedin',t:'LinkedIn Organic Growth',sub:'From an underperforming feed to a targeted industry audience',d:'A health-tech content program paired educational content with audience positioning, generating 278,040 impressions in 90 days. Read the full growth story and the role of audience quality.',cover:17,big:'278K',bl:'impressions in 90 days',
-  metrics:[['833 → 278,040','Impressions'],['19 → 3,100','Engagements'],['12,045','Followers'],['30–40%','More website sign-ups']],
+  metrics:[['833 → 278,040','Impressions'],['19 → 3,100','Engagements'],['12,045','Followers'],['30-40%','More website sign-ups']],
   points:['Educational content for a clinical, professional audience','Article covers, founder video, clinical graphics and carousels','Audience positioning: 66% of the audience from target industries','Baseline measured before the program, then a 90-day comparison'],
   ev:[16,17,18,19],tags:['LinkedIn','Content strategy','Health-tech'],res:'results-linkedin'},
- {id:'landing',t:'Landing Pages & Conversion Optimization',sub:'A clearer value proposition. A more deliberate conversion path.',d:'An edtech landing page was restructured around career outcomes, trust signals, objections and two distinct calls to action, with a reported 60–70% relative conversion uplift.',cover:null,big:'60–70%',bl:'relative conversion uplift',
-  metrics:[['60–70%','Relative conversion uplift'],['2-step','CTA path'],['4','Messaging pillars']],
+ {id:'landing',t:'Landing Pages & Conversion Optimization',sub:'A clearer value proposition. A more deliberate conversion path.',d:'An edtech landing page was restructured around career outcomes, trust signals, objections and two distinct calls to action, with a reported 60-70% relative conversion uplift.',cover:null,big:'60-70%',bl:'relative conversion uplift',
+  metrics:[['60-70%','Relative conversion uplift'],['2-step','CTA path'],['4','Messaging pillars']],
   points:['Messaging reorganized around career outcomes','Proof and trust signals placed where doubt appears','Common objections answered on the page','Two distinct calls to action for different readiness levels'],
   ev:[],tags:['CRO','Copywriting','Edtech'],res:'results-linkedin'},
  {id:'ads',t:'Google & Meta Advertising',sub:'Acquisition performance across search, social and retargeting',d:'A collection of Google Ads and Meta Ads examples spanning eCommerce sales, high-volume lead generation, messaging campaigns and retargeting. Each result is read in its original campaign context.',cover:2,big:'4.92x',bl:'Google Ads ROAS',
@@ -1058,7 +1065,7 @@ function countUp(scope){
 
 /* ---------- contact form ---------- */
 /* To receive form messages by email: paste your Web3Forms access key between the quotes below. */
-const FORM_KEY='bdae1ddb-3c8c-41f4-b259-847e1d5fd3e0';
+const FORM_KEY='';
 $('#form').addEventListener('submit',e=>{
   e.preventDefault();
   const f=e.target,v=id=>f.querySelector('#'+id).value.trim();let ok=true;
@@ -1067,20 +1074,14 @@ $('#form').addEventListener('submit',e=>{
   if(!ok){f.querySelector('.bad input').focus();return}
   if($('#f-bot').checked)return;
   const data={name:v('f-name'),email:v('f-email'),website:v('f-site')||'-',service:v('f-svc'),budget:v('f-budget')||'Prefer not to say',message:v('f-msg')||'-'};
-  const body=`Hi Manish,\n\nName: ${data.name}\nEmail: ${data.email}\nWebsite: ${data.website}\nService of interest: ${data.service}\nMonthly budget: ${data.budget}\n\nBiggest current challenge:\n${data.message}\n`;
-  const subj=`Growth enquiry from ${data.name}`;
   const s=$('#sent'),btn=$('#f-submit');
-  const fallback=(note)=>{const mail=`mailto:manishexecutive163@gmail.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-    s.hidden=false;s.className='sent';
-    s.innerHTML=`<b>${note||'Your message is ready, '+esc(data.name)+'.'}</b><p>Send it from your email app, or copy it and paste it into LinkedIn or Upwork.</p><div class="ctas" style="margin:0"><a class="btn btn-gold" href="${mail}">Send by email ${ARR}</a><button class="btn btn-line" type="button" id="copyMsg">Copy message</button></div>`;
-    $('#copyMsg').onclick=()=>{try{navigator.clipboard.writeText(body).then(()=>toast('Message copied'),()=>toast('Copy not available here'))}catch(_){toast('Copy not available here')}}};
-  if(!FORM_KEY){fallback();return}
+  const show=(ok,title,text)=>{s.hidden=false;s.className='sent'+(ok?' ok':' fail');s.innerHTML=`<span class="sent-ic">${ok?'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m4 10 4 4 8-8"/></svg>':'!'}</span><div><b>${title}</b><p>${text}</p></div>`};
+  if(!FORM_KEY){show(false,'The form isn’t connected yet.','Please reach out on LinkedIn or Upwork in the meantime.');return}
   btn.disabled=true;btn.firstChild.textContent='Sending… ';
   fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-    body:JSON.stringify({access_key:FORM_KEY,subject:subj,from_name:'Manish Sharma portfolio',replyto:data.email,...data})})
-   .then(r=>r.json()).then(j=>{if(!j.success)throw 0;
-     s.hidden=false;s.className='sent';s.innerHTML=`<b>Thank you, ${esc(data.name)}. Your message has been sent.</b><p>Manish will reply to ${esc(data.email)} soon.</p>`;f.reset()})
-   .catch(()=>fallback('The message could not be sent automatically.'))
+    body:JSON.stringify({access_key:FORM_KEY,subject:`Growth enquiry from ${data.name}`,from_name:'Manish Sharma portfolio',replyto:data.email,...data})})
+   .then(r=>r.json()).then(j=>{if(!j.success)throw 0;f.reset();show(true,'Message sent.',`Thank you, ${esc(data.name)}. We’ll get back to you shortly.`)})
+   .catch(()=>show(false,'Your message couldn’t be sent.','Please check your connection and try again in a moment.'))
    .finally(()=>{btn.disabled=false;btn.firstChild.textContent='Send message '});
 });
 function toast(t){const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1900)}
