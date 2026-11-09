@@ -2,6 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ4M62Q3');</script>
+<!-- End Google Tag Manager -->
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zb0ax00kby");
+</script>
+<!-- End Microsoft Clarity -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -542,6 +558,10 @@ footer .base a{color:#C0CADA}
 
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ4M62Q3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Manish Sharma, home">
@@ -1109,5 +1129,18 @@ $('#menuBtn').onclick=()=>{const o=$('#menu').classList.toggle('open');$('#menuB
 route(fromHash());
 </script>
 
+<script>
+/* Virtual page views for GTM: fires 'virtual_page_view' each time a visitor opens another page of this site */
+(function(){
+  var last=(location.hash.slice(1)||'home');
+  function vpv(){
+    var h=(location.hash.slice(1)||'home'); if(h===last)return; last=h;
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({event:'virtual_page_view',page_path:location.pathname+'#'+h,page_location:location.href,page_title:'Manish Sharma Portfolio | '+h});
+  }
+  var ps=history.pushState; history.pushState=function(){var r=ps.apply(this,arguments);setTimeout(vpv,0);return r};
+  window.addEventListener('hashchange',vpv); window.addEventListener('popstate',vpv);
+})();
+</script>
 </body>
 </html>
