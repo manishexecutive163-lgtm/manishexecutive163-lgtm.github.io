@@ -22,14 +22,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Manish Sharma · Performance Marketing Specialist">
-<meta property="og:description" content="Google Ads, Meta Ads, lifecycle email and SMS, CRM and analytics. 11+ years, 200+ clients, 100% Upwork Job Success.">
-<meta property="og:image" content="https://manishexecutive163-lgtm.github.io/Manish-Portfolio/og-image.jpg">
+<meta property="og:title" content="Manish Sharma | Full-Stack Growth Marketer &amp; Growth Marketing Strategist">
+<meta property="og:description" content="From first click to repeat purchase. Google Ads, Meta Ads, B2B lead generation, CRO, Klaviyo, email and SMS automation and CRM. 11+ years, 200+ clients.">
+<meta property="og:image" content="https://manishexecutive163-lgtm.github.io/Manish-Portfolio/og-image.jpg?v=2">
 <meta property="og:url" content="https://manishexecutive163-lgtm.github.io/Manish-Portfolio/">
 <meta name="twitter:card" content="summary_large_image">
 <title>Manish Sharma Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Manish Sharma, performance marketing specialist. Google Ads, Meta Ads, lifecycle email and SMS, CRM, landing pages and analytics. 11+ years, 200+ clients, 100% Upwork Job Success.">
+<meta name="description" content="Manish Sharma, Full-Stack Growth Marketer &amp; Growth Marketing Strategist. Google Ads, Meta Ads, B2B lead generation, CRO, Klaviyo, email and SMS automation and CRM. 11+ years, 200+ clients, 100% Upwork Job Success.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
@@ -554,6 +554,34 @@ footer .base a{color:#C0CADA}
 .sent-ic svg{width:16px;height:16px}
 .sent div{display:flex;flex-direction:column;gap:4px}
 .btn:disabled{opacity:.6;cursor:wait;transform:none}
+
+/* v6 content additions */
+.hero .lede + .lede{margin-top:12px}
+.page-hero .lede + .lede{margin-top:10px}
+.creds .wrap{grid-template-columns:repeat(4,1fr)}
+@media (max-width:920px){.creds .wrap{grid-template-columns:1fr 1fr}.cred:last-child{grid-column:auto}}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative;counter-reset:f}
+.flow::before{content:"";position:absolute;left:24px;right:24px;top:47px;height:2px;background:linear-gradient(90deg,var(--steel),var(--gold))}
+.fl-st{position:relative;background:var(--surface);border:1px solid var(--tint-line);border-radius:16px;padding:22px 20px 24px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);min-width:0;transition:transform .4s var(--ease),background .4s,color .4s,box-shadow .4s}
+.fl-n{width:50px;height:50px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-family:var(--f-display);font-size:17px;font-weight:500;box-shadow:0 0 0 6px var(--bg);transition:background .4s,color .4s,transform .4s var(--ease)}
+.fl-st h3{font-size:21px;font-weight:500;margin-top:6px}
+.fl-st p{font-size:15px;color:var(--muted);transition:color .4s}
+.fl-st:hover{transform:translateY(-8px);background:var(--navy);color:var(--cream);box-shadow:var(--shadow-lg)}
+.fl-st:hover .fl-n{background:var(--gold);color:var(--navy);transform:scale(1.08)}
+.fl-st:hover p{color:#C0CADA}
+.fl-last .fl-n{background:var(--gold);color:var(--navy)}
+.flow-note{max-width:62ch;margin:34px auto 0;text-align:center;font-family:var(--f-display);font-size:20px;line-height:1.5;color:var(--fg)}
+@media (max-width:1000px){.flow{grid-template-columns:1fr 1fr}.flow::before{display:none}.fl-last{grid-column:1/-1}}
+@media (max-width:560px){.flow{grid-template-columns:1fr}}
+.sv-k{align-self:flex-start;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:4px;background:var(--tint);color:var(--accent-ink)}
+.sv-k-retention{background:var(--gold);color:var(--navy)}
+.sv-k-conversion{background:var(--steel);color:var(--cream)}
+.sv-k-strategy{background:var(--navy);color:var(--gold)}
+.sv-lead{font-family:var(--f-display);font-size:17px!important;line-height:1.45;color:var(--fg)!important}
+.tk-grid{grid-template-columns:repeat(4,1fr)}
+.tk-why{font-size:14px;color:var(--muted);margin:-6px 0 14px}
+@media (max-width:1100px){.tk-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.tk-grid{grid-template-columns:1fr}}
 </style>
 
 </head>
@@ -590,11 +618,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="hero on-navy">
     <div class="wrap">
       <div>
-        <p class="plate">Performance Marketing <b>·</b> Lifecycle Automation <b>·</b> Revenue Growth</p>
-        <h1>Marketing that connects the click to the customer. <em>And the customer to the next purchase.</em></h1>
-        <p class="lede">I'm Manish Sharma, a performance marketing specialist with 11+ years of experience helping businesses acquire customers, convert more of their traffic, and build retention systems that keep working after the first sale. From Google Ads and Meta campaigns to CRM workflows, email automation, analytics and landing pages, I connect the pieces that make growth measurable.</p>
+        <p class="plate">Full-Stack Growth Marketing <b>·</b> Customer Acquisition <b>·</b> Lifecycle Automation</p>
+        <h1>From First Click to Repeat Purchase. <em>One Connected Growth Strategy.</em></h1>
+        <p class="lede">I'm Manish Sharma, a Full-Stack Growth Marketer with 11+ years of experience helping businesses acquire customers, improve conversions, and build stronger customer relationships.</p>
+        <p class="lede">I connect Google Ads, Meta Ads, B2B lead generation, conversion optimization, Klaviyo, email and SMS automation, and CRM systems into integrated growth strategies.</p>
+        <p class="lede">Rather than treating advertising and retention as separate activities, I focus on how every stage of the customer journey contributes to measurable business outcomes.</p>
         <div class="ctas">
-          <a class="btn btn-gold" href="#results">Explore the results <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn-gold" href="#results">Explore my results <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
           <a class="btn btn-ghost" href="#case-studies">View case studies</a>
           <a class="btn btn-ghost" href="#contact">Discuss your growth goals</a>
         </div>
@@ -602,7 +632,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ring-wrap" aria-hidden="true">
         <div class="ring">
           <svg class="orbit" viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/></defs>
-            <text><textPath href="#c">ACQUIRE · CONVERT · RETAIN · MEASURE · GROWTH STRATEGIST · MARKETING EXPERT ·</textPath></text></svg>
+            <text><textPath href="#c">ACQUIRE · CONVERT · NURTURE · RETAIN · MEASURE · FULL-STACK GROWTH MARKETER ·</textPath></text></svg>
           <span class="dot"></span>
           <img src="ms-mark-dark.webp" alt="">
         </div>
@@ -610,11 +640,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="creds">
       <div class="wrap">
-        <div class="cred"><strong data-count="11" data-suf="+">11+</strong><span>Years of hands-on experience</span></div>
+        <div class="cred"><strong data-count="11" data-suf="+">11+</strong><span>Years of experience</span></div>
         <div class="cred"><strong data-count="200" data-suf="+">200+</strong><span>Global clients</span></div>
-        <div class="cred"><strong>$1K-$100K+</strong><span>Monthly ad budgets managed</span></div>
         <div class="cred"><strong data-count="100" data-suf="%">100%</strong><span>Upwork Job Success Score</span></div>
-        <div class="cred"><strong>Top Rated</strong><span>Upwork, 10+ years</span></div>
+        <div class="cred"><strong data-count="10" data-suf="+ yrs">10+ yrs</strong><span>Top Rated on Upwork</span></div>
       </div>
     </div>
   </section>
@@ -643,11 +672,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="ctas"><a class="btn btn-navy" href="#process">See how I work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
       </div>
       <div class="chain">
-        <div class="chain-row"><span class="ix">01</span><div><b>Traffic</b><span>Google, Microsoft, Meta and LinkedIn campaigns</span></div></div>
-        <div class="chain-row"><span class="ix">02</span><div><b>Landing page</b><span>Offer, structure, objections and CTA path</span></div></div>
-        <div class="chain-row"><span class="ix">03</span><div><b>Tracking</b><span>GA4, GTM, Pixel, Conversions API, call events</span></div></div>
-        <div class="chain-row"><span class="ix">04</span><div><b>CRM &amp; follow-up</b><span>Lead routing, pipelines and nurture</span></div></div>
-        <div class="chain-row"><span class="ix">05</span><div><b>Retention</b><span>Lifecycle email, SMS and segmentation</span></div></div>
+        <div class="chain-row"><span class="ix">01</span><div><b>Acquire</b><span>Paid advertising, B2B prospecting and targeted outreach</span></div></div>
+        <div class="chain-row"><span class="ix">02</span><div><b>Convert</b><span>Landing pages, lead capture, funnels and tracking</span></div></div>
+        <div class="chain-row"><span class="ix">03</span><div><b>Nurture</b><span>CRM, email and SMS follow-up sequences</span></div></div>
+        <div class="chain-row"><span class="ix">04</span><div><b>Retain</b><span>Segmentation, post-purchase and win-back campaigns</span></div></div>
+        <div class="chain-row"><span class="ix">05</span><div><b>Measure &amp; optimize</b><span>CAC, conversion, retention and revenue reporting</span></div></div>
       </div>
     </div>
   </section>
@@ -657,7 +686,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="sec-head">
         <div><p class="plate"><b>03</b> &nbsp;Explore the portfolio</p><h2>Where would you like to start?</h2></div><p>Pick the question that matters most to you. Each one opens the page that answers it.</p>
       </div>
-      <div class="explore"><a class="qx" href="#about"><span class="qx-top"><span class="qx-n">01</span><span class="plate">About</span></span><b>Who is behind the work?</b><span class="qx-a">11 years, 200+ clients and one connected way of working.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#services"><span class="qx-top"><span class="qx-n">02</span><span class="plate">Services</span></span><b>What can you help me with?</b><span class="qx-a">Six capabilities, from paid media to tracking and reporting.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#results"><span class="qx-top"><span class="qx-n">03</span><span class="plate">Results gallery</span></span><b>Can I see the numbers?</b><span class="qx-a">19 real dashboards across Google, Meta, email and LinkedIn.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#case-studies"><span class="qx-top"><span class="qx-n">04</span><span class="plate">Case studies</span></span><b>How did it actually play out?</b><span class="qx-a">Five engagements, from the problem to the outcome.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#industries"><span class="qx-top"><span class="qx-n">05</span><span class="plate">Industries</span></span><b>Do you know my industry?</b><span class="qx-a">eCommerce, SaaS, health-tech, education and local services.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#toolkit"><span class="qx-top"><span class="qx-n">06</span><span class="plate">Toolkit</span></span><b>Which tools do you work in?</b><span class="qx-a">98 tools across 11 categories, searchable.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#process"><span class="qx-top"><span class="qx-n">07</span><span class="plate">Process</span></span><b>How would we work together?</b><span class="qx-a">Audit, prioritize, build, optimize, report.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx qx-cta" href="#contact"><span class="qx-top"><span class="qx-n">08</span><span class="plate">Contact</span></span><b>Ready to talk about your goals?</b><span class="qx-a">Share one metric you want to improve. I'll suggest where to start.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a></div>
+      <div class="explore"><a class="qx" href="#about"><span class="qx-top"><span class="qx-n">01</span><span class="plate">About</span></span><b>Who is behind the work?</b><span class="qx-a">A Full-Stack Growth Marketer with 11+ years and 200+ clients.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#services"><span class="qx-top"><span class="qx-n">02</span><span class="plate">Services</span></span><b>What can you help me with?</b><span class="qx-a">Six connected capabilities across acquisition, conversion and retention.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#results"><span class="qx-top"><span class="qx-n">03</span><span class="plate">Results gallery</span></span><b>Can I see the numbers?</b><span class="qx-a">Real dashboards across acquisition, conversion and retention.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#case-studies"><span class="qx-top"><span class="qx-n">04</span><span class="plate">Case studies</span></span><b>How did it actually play out?</b><span class="qx-a">Five engagements, from the problem to the outcome.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#industries"><span class="qx-top"><span class="qx-n">05</span><span class="plate">Industries</span></span><b>Do you know my industry?</b><span class="qx-a">eCommerce, SaaS, EdTech, beauty, travel, fitness and more.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#toolkit"><span class="qx-top"><span class="qx-n">06</span><span class="plate">Toolkit</span></span><b>Which tools do you work in?</b><span class="qx-a">Tools grouped by business function, and searchable.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx" href="#process"><span class="qx-top"><span class="qx-n">07</span><span class="plate">Process</span></span><b>How would we work together?</b><span class="qx-a">Diagnose, strategize, execute, optimize, scale.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a><a class="qx qx-cta" href="#contact"><span class="qx-top"><span class="qx-n">08</span><span class="plate">Contact</span></span><b>Ready to talk about your goals?</b><span class="qx-a">Share one metric you want to improve. I'll suggest where to start.</span><span class="qx-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></a></div>
     </div>
   </section>
   <div class="next"><div class="wrap"><a href="#about"><div><span class="plate">Next page</span><strong>About Manish</strong></div><span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></a></div></div>
@@ -667,18 +696,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="about" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>About</p>
-    <h1>Eleven years of making performance marketing <em>more accountable.</em></h1>
+    <h1>More Than Paid Advertising. <em>A Full-Stack Approach to Growth.</em></h1>
   </div></section>
   <section class="sec"><div class="wrap about-grid">
     <div class="about-copy">
-      <p>I have spent more than a decade working with brands across eCommerce, SaaS, health-tech, education, agencies and local services.</p>
-      <p>My work spans the United States, United Kingdom, Europe, Australia and India, with projects ranging from focused lead generation campaigns to multi-channel acquisition and retention programs.</p>
-      <p>I began with the fundamentals of digital acquisition and expanded into the systems that determine what happens next: conversion tracking, landing pages, lead routing, sales funnels, lifecycle email and SMS, customer segmentation, and reporting. Today, that cross-functional view is the foundation of how I work.</p>
+      <p>I'm Manish Sharma, a Full-Stack Growth Marketer and Growth Marketing Strategist with over 11 years of experience working with businesses across global markets.</p>
+      <p>My expertise combines two essential components of business growth: acquiring new customers and developing the systems that help convert, nurture, and retain them.</p>
+      <p>I've worked with 200+ clients across eCommerce, SaaS, B2B Software, EdTech, Beauty &amp; Wellness, Travel &amp; Tourism, Health &amp; Fitness, agencies, and service-based businesses.</p>
+      <p>My work spans Google Ads, Meta Ads, LinkedIn Ads, B2B prospecting, cold email outreach, conversion rate optimization, CRM automation, and lifecycle email and SMS marketing.</p>
     </div>
     <aside class="profile-card on-navy">
       <div class="seal"><img src="ms-mark-dark.webp" alt="MS monogram"></div>
       <h3>Manish Sharma</h3>
-      <p class="role">Growth Strategist | Marketing Expert</p>
+      <p class="role">Full-Stack Growth Marketer &amp; Growth Marketing Strategist</p>
       <ul class="facts">
         <li><span>Upwork status</span><b>Top Rated, 10+ years</b></li>
         <li><span>Clients</span><b>200+</b></li>
@@ -698,14 +728,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="abn"><strong data-count="5">5</strong><span>Markets: US, UK, EU, AU, IN</span></div>
   </div></section>
   <section class="sec"><div class="wrap">
-    <div class="sec-head"><div><p class="plate"><b>01</b> &nbsp;How the work has grown</p><h2>From the first click to everything that happens after it.</h2></div><p>The work started with acquisition and grew, project by project, into the systems that decide whether a click becomes revenue.</p></div>
-    <div class="evo">
-      <div class="evo-st"><span class="evo-k">Stage 01</span><h3>Acquisition</h3><p>The fundamentals: search and social campaigns that bring the right people in.</p><div class="evo-tags"><span>Google Ads</span><span>Microsoft Ads</span><span>Meta Ads</span><span>LinkedIn Ads</span></div></div>
-      <div class="evo-ar" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></div>
-      <div class="evo-st"><span class="evo-k">Stage 02</span><h3>Conversion</h3><p>What happens after the click: tracking, landing pages, lead routing and sales funnels.</p><div class="evo-tags"><span>GA4 &amp; GTM</span><span>Landing pages</span><span>CRM</span><span>Funnels</span></div></div>
-      <div class="evo-ar" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></div>
-      <div class="evo-st now"><span class="evo-k">Stage 03 · Today</span><h3>Retention &amp; reporting</h3><p>Lifecycle email and SMS, customer segmentation, and reporting that explains the numbers.</p><div class="evo-tags"><span>Klaviyo</span><span>SMS</span><span>RFM segments</span><span>Looker Studio</span></div></div>
-    </div>
+    <div class="sec-head"><div><p class="plate"><b>01</b> &nbsp;How my work connects</p><h2>Five stages. One customer journey.</h2></div></div>
+    <div class="flow"><div class="fl-st"><span class="fl-n">01</span><h3>Acquire</h3><p>Reach qualified audiences through paid advertising, B2B prospecting, and targeted outreach.</p></div><div class="fl-st"><span class="fl-n">02</span><h3>Convert</h3><p>Improve landing pages, lead capture, sales funnels, and conversion tracking.</p></div><div class="fl-st"><span class="fl-n">03</span><h3>Nurture</h3><p>Build personalized follow-up sequences through CRM, email, and SMS automation.</p></div><div class="fl-st"><span class="fl-n">04</span><h3>Retain</h3><p>Use customer segmentation, post-purchase communication, win-back campaigns, and lifecycle marketing to encourage repeat purchases.</p></div><div class="fl-st fl-last"><span class="fl-n">05</span><h3>Measure &amp; Optimize</h3><p>Connect acquisition costs, conversion performance, customer behavior, retention, and revenue reporting to better growth decisions.</p></div></div>
+    <p class="flow-note">My approach is grounded in understanding the complete customer journey, identifying opportunities, and connecting marketing channels to measurable commercial objectives.</p>
   </div></section>
   <section class="sec tint"><div class="wrap">
     <div class="sec-head"><div><p class="plate"><b>02</b> &nbsp;What clients can expect</p><h2>Four commitments on every engagement.</h2></div></div>
@@ -720,7 +745,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="sec"><div class="wrap">
     <div class="sec-head"><div><p class="plate"><b>03</b> &nbsp;Sectors &amp; ways of working</p><h2>Where I work, and how we can work together.</h2></div></div>
     <div class="ww">
-      <div class="ww-card"><h3>Sectors</h3><div class="ww-chips"><span>eCommerce</span><span>SaaS</span><span>Health-tech</span><span>Education</span><span>Agencies</span><span>Local services</span></div><h3>Markets</h3><div class="ww-chips mk"><span>US</span><span>UK</span><span>Europe</span><span>Australia</span><span>India</span></div><a class="link-arrow" href="#industries">Explore industries <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
+      <div class="ww-card"><h3>Sectors</h3><div class="ww-chips"><span>eCommerce</span><span>SaaS</span><span>B2B Software</span><span>EdTech</span><span>Beauty &amp; Wellness</span><span>Travel &amp; Tourism</span><span>Health &amp; Fitness</span><span>Agencies</span><span>Service businesses</span></div><h3>Markets</h3><div class="ww-chips mk"><span>US</span><span>UK</span><span>Europe</span><span>Australia</span><span>India</span></div><a class="link-arrow" href="#industries">Explore industries <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
       <div class="ww-card dark on-navy"><h3>Engagements</h3><ul class="ww-list"><li><b>Ongoing campaign management</b><span>Month-to-month running and optimization</span></li><li><b>Strategic consulting</b><span>Plans, channel mix and priorities</span></li><li><b>Audits</b><span>Accounts, tracking and conversion paths</span></li><li><b>Long-term partnerships</b><span>A full-time freelancer on your team</span></li></ul></div>
     </div>
   </div></section>
@@ -739,7 +764,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="services" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Services</p>
-    <h1>Six connected capabilities. <em>One objective: measurable business growth.</em></h1>
+    <h1>Six Connected Growth Capabilities. <em>One Customer Journey.</em></h1>
+    <p class="lede">Acquisition, conversion and retention get equal attention, because growth depends on all three working together.</p>
   </div></section>
   <section class="sec tint"><div class="wrap"><div class="sv-grid" id="svGrid"></div></div></section>
   <section class="sec"><div class="wrap">
@@ -755,8 +781,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="results" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Results gallery</p>
-    <h1>Real campaign dashboards, <em>separated by discipline.</em></h1>
-    <p class="lede">Actual dashboard extracts from client accounts. Client identities are kept private, and each result is shown with its own platform and reporting period.</p>
+    <h1>Real Results Across <em>Acquisition, Conversion &amp; Retention</em></h1>
+    <p class="lede">Growth isn't measured by clicks alone. Explore real campaign dashboards and case studies covering Google Ads, Meta Ads, B2B lead generation, LinkedIn growth, landing page optimization, Klaviyo email automation, and customer retention analytics.</p>
+    <p class="lede">Each result represents a specific account and reporting period, with performance figures presented in their original context.</p>
   </div></section>
   <section class="sec" style="padding-top:28px"><div class="wrap">
     <div class="tabs" id="rsTabs" role="tablist"></div>
@@ -770,7 +797,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Case studies</p>
     <h1>Case Study <em>Library</em></h1>
-    <p class="lede">Short previews of five engagements. Open any one for the key numbers and evidence, then read the full case study.</p>
+    <p class="lede">Five engagements across acquisition, conversion and retention. Each one stands on its own, with its tools, strategy, implementation, outcomes and supporting screenshots.</p>
+    <p class="lede">Explore the evidence behind the strategy.</p>
   </div></section>
   <section class="sec"><div class="wrap"><div class="cs-grid" id="csGrid"></div></div></section>
   <div class="next"><div class="wrap"><a href="#industries"><div><span class="plate">Next page</span><strong>Industries &amp; markets</strong></div><span class="circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></a></div></div>
@@ -783,8 +811,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="industries" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Industries</p>
-    <h1>Different buying journeys. <em>The same demand for accountability.</em></h1>
-    <p class="lede">A strong acquisition strategy for a local service business will not look like a retention program for an eCommerce brand. The offer, sales cycle, data quality and customer economics determine the channel mix.</p>
+    <h1>Growth Strategies Built Around <em>Different Customer Journeys</em></h1>
+    <p class="lede">Every industry has different buying decisions, acquisition costs, conversion barriers, and retention opportunities.</p>
+    <p class="lede">I adapt paid media, customer acquisition, marketing automation, and lifecycle strategies to the needs of each business.</p>
   </div></section>
   <section class="sec"><div class="wrap">
     <div class="ind-wrap">
@@ -793,7 +822,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div></section>
   <section class="sec tint"><div class="wrap">
-    <div class="sec-head"><div><p class="plate"><b>02</b> &nbsp;Geographic experience</p><h2>Five markets, one way of working.</h2></div></div>
+    <div class="sec-head"><div><p class="plate"><b>02</b> &nbsp;Markets served</p><h2>Five markets, one way of working.</h2></div></div>
     <div class="geo">
       <div><b>US</b><span>United States</span></div><div><b>UK</b><span>United Kingdom</span></div><div><b>EU</b><span>Europe</span></div><div><b>AU</b><span>Australia</span></div><div><b>IN</b><span>India</span></div>
     </div>
@@ -806,7 +835,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Toolkit</p>
     <h1>Tools are selected for the job, <em>not the other way around.</em></h1>
-    <p class="lede">The working stack spans acquisition, measurement, CRM, lifecycle communication, conversion and delivery.</p>
+    <p class="lede">Grouped by business function: each category shows what the tools are used for, not just their names.</p>
   </div></section>
   <section class="sec"><div class="wrap">
     <div class="tk-controls">
@@ -822,7 +851,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="process" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Process</p>
-    <h1>Diagnose first. <em>Then build what the numbers justify.</em></h1>
+    <h1>Diagnose. Strategize. Execute. <em>Optimize. Scale.</em></h1>
   </div></section>
   <section class="sec"><div class="wrap">
     <div class="steps" id="steps"><span class="bar"></span></div>
@@ -837,18 +866,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page" data-page="contact" hidden>
   <section class="page-hero on-navy"><div class="wrap">
     <p class="crumbs"><a href="#home">Home</a><i>/</i>Contact</p>
-    <h1>Let's find the next growth opportunity <em>hiding in your funnel.</em></h1>
-    <p class="lede">Whether you need more qualified leads, stronger paid media performance, a lifecycle email system or cleaner conversion tracking, the first step is understanding what is working today and what is holding growth back.</p>
+    <h1>Let's Build a Growth Strategy That Goes <em>Beyond the First Conversion.</em></h1>
+    <p class="lede">Whether you're looking to acquire more qualified customers, improve paid advertising performance, optimize conversion funnels, or strengthen retention through Klaviyo, email, SMS, and CRM automation, let's identify where your biggest growth opportunities lie.</p>
   </div></section>
   <section class="sec"><div class="wrap ct-grid">
     <form class="form" id="form" novalidate>
-      <h3>Start a conversation</h3>
+      <h3>Discuss your growth goals</h3>
       <p class="hint">Share your business, target market, current channels and the one metric you most want to improve. I'll help identify the most practical starting point.</p>
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Your name"><span class="err">Please add your name.</span></div>
       <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"><span class="err">Please add a valid email.</span></div>
       <div class="field"><label for="f-site">Website</label><input id="f-site" name="site" placeholder="yourcompany.com"></div>
       <div class="field"><label for="f-svc">Service of interest</label>
-        <select id="f-svc" name="svc"><option>Google Ads &amp; Microsoft Advertising</option><option>Meta Ads &amp; LinkedIn Advertising</option><option>Email, SMS &amp; Lifecycle Automation</option><option>CRM, Cold Outreach &amp; Lead Generation</option><option>Landing Pages, CRO &amp; Funnels</option><option>Analytics, Tracking &amp; Reporting</option><option>Not sure yet, need a review</option></select></div>
+        <select id="f-svc" name="svc"><option>Google Ads, Microsoft Ads &amp; PPC Management</option><option>Meta Ads, LinkedIn Ads &amp; Paid Social</option><option>B2B Lead Generation &amp; Cold Outreach</option><option>Lifecycle Marketing, Klaviyo &amp; Customer Retention</option><option>CRM Automation, Sales Funnels &amp; CRO</option><option>Full-Funnel Growth Strategy &amp; Revenue Analytics</option><option>Not sure yet, need a review</option></select></div>
       <div class="field full"><label for="f-budget">Monthly marketing budget (optional)</label>
         <select id="f-budget" name="budget"><option value="">Prefer not to say</option><option>Under $1K</option><option>$1K - $5K</option><option>$5K - $20K</option><option>$20K - $50K</option><option>$50K - $100K+</option></select></div>
       <div class="field full"><label for="f-msg">Biggest current challenge</label><textarea id="f-msg" name="msg" placeholder="e.g. Leads are coming in but very few convert to sales"></textarea></div>
@@ -860,7 +889,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="ch" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=manishexecutive163@gmail.com&amp;su=Enquiry%20from%20your%20portfolio" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="16" height="12" rx="1.5"/><path d="m2 5 8 6 8-6"/></svg></span><span class="ct"><small>Email</small><strong>Email me</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
       <a class="ch" href="https://www.linkedin.com/in/manish-sharma-05b8b818b/" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M4 7h3v9H4zM5.5 3a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zM9 7h2.9v1.3c.4-.8 1.4-1.5 2.9-1.5 3 0 3.2 2 3.2 4.4V16h-3v-4.3c0-1 0-2.4-1.5-2.4S12 10.5 12 11.6V16H9z"/></svg></span><span class="ct"><small>LinkedIn</small><strong>Visit me on LinkedIn</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
       <a class="ch" href="https://www.upwork.com/freelancers/~015e1300fe81b67b30?mp_source=share" target="_blank" rel="noopener"><span class="ci"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5v5a4 4 0 0 0 8 0V5M11 10c1 4 3 5 5 5a3 3 0 0 0 0-6c-2 0-3 1-4 3l-2 6"/></svg></span><span class="ct"><small>Upwork · Top Rated · 100% JSS</small><strong>Hire me on Upwork</strong></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
-      <div class="sig-card"><div class="sign" aria-hidden="true">Manish Sharma</div><div class="rule"></div><p>Performance Marketing Specialist · India · Working worldwide</p></div>
+      <div class="sig-card"><div class="sign" aria-hidden="true">Manish Sharma</div><div class="rule"></div><p>Full-Stack Growth Marketer &amp; Growth Marketing Strategist · India · Working worldwide</p></div>
     </div>
   </div></section>
 </div>
@@ -868,7 +897,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="wrap">
-    <div class="fb"><img src="ms-mark-dark.webp" alt="MS monogram"><p>Manish Sharma · Growth Strategist | Marketing Expert. Performance marketing, lifecycle automation and revenue growth.</p></div>
+    <div class="fb"><img src="ms-mark-dark.webp" alt="MS monogram"><p>Manish Sharma | Full-Stack Growth Marketer &amp; Growth Marketing Strategist. Customer acquisition, conversion and lifecycle automation, connected into one growth strategy.</p></div>
     <div class="fl">
       <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
       <a href="#results">Results gallery</a><a href="#case-studies">Case studies</a><a href="#industries">Industries</a>
@@ -905,12 +934,12 @@ const DRIVE={
 };
 
 const SERVICES=[
- {t:'Google Ads & Microsoft Advertising',ic:'<circle cx="18" cy="18" r="10"/><path d="m26 26 9 9M13 18h10M18 13v10"/>',d:'Capture high-intent demand through Search, Shopping, Performance Max, Display, Demand Gen, YouTube and call-focused campaigns. Includes keyword and competitor research, account architecture, ad copy, product feeds, conversion tracking, bidding strategy, negative keywords, remarketing and optimization.',r:'results-google',c:'ads'},
- {t:'Meta Ads & LinkedIn Advertising',ic:'<rect x="6" y="8" width="28" height="20" rx="2"/><path d="M6 23l8-6 6 4 6-6 8 6M14 34h12M20 28v6"/>',d:'Build acquisition and retargeting programs across Facebook, Instagram and LinkedIn. Sales and lead campaigns, messaging and WhatsApp objectives, Advantage+ Shopping, catalog ads, creative testing, audience segmentation, lookalikes, lead forms and funnel-based reporting.',r:'results-meta',c:'ads'},
- {t:'Email, SMS & Lifecycle Automation',ic:'<rect x="5" y="10" width="30" height="20" rx="2"/><path d="m5 12 15 10 15-10"/>',d:'Turn customer behavior into timely communication with welcome, browse abandonment, cart recovery, post-purchase, cross-sell, win-back, re-engagement and sunset flows. Klaviyo, Omnisend, Mailchimp, ActiveCampaign, Brevo and segmentation-led campaign strategy.',r:'results-email',c:'email'},
- {t:'CRM, Cold Outreach & Lead Generation',ic:'<circle cx="12" cy="14" r="5"/><circle cx="28" cy="14" r="5"/><path d="M3 33c0-6 4-9 9-9s9 3 9 9M19 33c0-6 4-9 9-9s9 3 9 9"/>',d:'Design lead pipelines and follow-up workflows in GoHighLevel, HubSpot, Zoho, Pipedrive and Dynamics 365. Build B2B prospecting systems with Apollo, Clay, LinkedIn Sales Navigator, Instantly, Smartlead and Lemlist, including list hygiene, deliverability and routing.',r:'toolkit',rl:'See the stack',c:'retention'},
- {t:'Landing Pages, CRO & Funnels',ic:'<rect x="7" y="5" width="26" height="30" rx="2"/><path d="M7 11h26M12 17h16M12 22h10"/><rect x="12" y="27" width="10" height="4" rx="1"/>',d:'Improve the journey from ad to action through offer positioning, landing page copy, page structure, objection handling, form strategy, CTA architecture and testing on Shopify, WordPress, Webflow and ClickFunnels.',r:'results-linkedin',c:'landing'},
- {t:'Analytics, Tracking & Reporting',ic:'<path d="M5 34h30M9 34V25M17 34V19M25 34V13M33 34V7"/>',d:'Set up and audit GA4, Google Tag Manager, Meta Pixel, Conversions API, call/offline conversion events and commerce catalogs. Translate platform reporting into decisions using Looker Studio, Excel, Sheets and retention analytics.',r:'results-email',c:'retention'}
+ {k:'Acquisition',t:'Google Ads, Microsoft Ads & PPC Management',ic:'<circle cx="18" cy="18" r="10"/><path d="m26 26 9 9M13 18h10M18 13v10"/>',l:'Build and optimize paid search and shopping campaigns that attract high-intent prospects.',d:'Google Search, Shopping, Performance Max, Demand Gen, Display, YouTube Ads, Microsoft Advertising, keyword research, bidding, remarketing, conversion tracking, and ROAS optimization.',a:[['#results-google','See results'],['#case-ads','Case study']]},
+ {k:'Acquisition',t:'Meta Ads, LinkedIn Ads & Paid Social',ic:'<rect x="6" y="8" width="28" height="20" rx="2"/><path d="M6 23l8-6 6 4 6-6 8 6M14 34h12M20 28v6"/>',l:'Connect audience research, creative strategy, campaign execution, and conversion measurement.',d:'Facebook Ads, Instagram Ads, LinkedIn Ads, audience segmentation, prospecting, retargeting, creative testing, lead generation, eCommerce campaigns, Meta Pixel, and Conversions API.',a:[['#results-meta','See results'],['#case-linkedin','LinkedIn case study']]},
+ {k:'Acquisition',t:'B2B Lead Generation & Cold Outreach',ic:'<circle cx="12" cy="14" r="5"/><circle cx="28" cy="14" r="5"/><path d="M3 33c0-6 4-9 9-9s9 3 9 9M19 33c0-6 4-9 9-9s9 3 9 9"/>',l:'Build structured outbound systems to identify, reach, and nurture relevant decision-makers.',d:'Apollo.io, Clay, Lusha, LinkedIn Sales Navigator, Instantly, Brevo, SendGrid, lead enrichment, personalized cold email, deliverability optimization, and automated follow-ups.',a:[['#toolkit','See the stack'],['#contact','Discuss outbound']]},
+ {k:'Retention',t:'Lifecycle Marketing, Klaviyo & Customer Retention',ic:'<rect x="5" y="10" width="30" height="20" rx="2"/><path d="m5 12 15 10 15-10"/>',l:'Turn one-time transactions into opportunities for longer customer relationships.',d:'Klaviyo, Mailchimp, Brevo, ActiveCampaign, welcome flows, abandoned-cart recovery, browse abandonment, post-purchase automation, win-back campaigns, email and SMS marketing, segmentation, and retention analysis.',a:[['#results-email','See results'],['#case-email','Case study']]},
+ {k:'Conversion',t:'CRM Automation, Sales Funnels & CRO',ic:'<rect x="7" y="5" width="26" height="30" rx="2"/><path d="M7 11h26M12 17h16M12 22h10"/><rect x="12" y="27" width="10" height="4" rx="1"/>',l:'Reduce friction between marketing engagement, lead capture, and conversion.',d:'GoHighLevel, HubSpot, Shopify, ClickFunnels, landing page optimization, lead routing, CRM workflows, sales funnels, A/B testing, checkout optimization, and conversion rate optimization.',a:[['#results-linkedin','See results'],['#case-landing','Case study']]},
+ {k:'Strategy',t:'Full-Funnel Growth Strategy & Revenue Analytics',ic:'<path d="M5 34h30M9 34V25M17 34V19M25 34V13M33 34V7"/>',l:'Understand how acquisition, conversion, and retention work together.',d:'Customer journey mapping, GA4, GTM, conversion attribution, customer acquisition cost (CAC), lifetime value (LTV), cohort analysis, customer segmentation, funnel reporting, and cross-channel performance analysis.',a:[['#results-email','See results'],['#case-retention','Case study']]}
 ];
 
 const RESULTS={
@@ -928,7 +957,7 @@ const RESULTS={
  ]},
  email:{label:'Email, SMS & Retention',title:'Email, SMS & Retention',intro:'Lifecycle flows, email-attributed revenue, customer segmentation and SMS campaigns.',items:[
   {chips:['Lifecycle automation'],m:'Welcome → Win-back',ms:'',t:'From welcome to win-back',d:'Behavior-triggered flows were organized around welcome, cart and browse recovery, post-purchase engagement, anniversaries, interest-based segments and win-back. The objective: make follow-up timely and relevant rather than relying on one-off blasts.',p:'Klaviyo flow library',img:[11],cap:'Klaviyo flow library'},
-  {chips:['Email revenue'],m:'39%',ms:'of store revenue',t:'Email-attributed revenue, two reporting periods',d:'One Klaviyo dashboard attributed £12,743 to email, representing 39% of total store revenue during its reporting period. A separate USD dashboard attributed $33,728, representing 24% of $142,670 in total revenue.',n:'These are separate stores or reporting periods, not one combined result.',p:'Two Klaviyo performance dashboards',img:[12,13],cap:'Klaviyo GBP and USD performance'},
+  {chips:['Email revenue'],m:'39%',ms:'of store revenue',t:'Email-attributed revenue, two reporting periods',d:'One Klaviyo dashboard attributed £12,743 to email in total, 39% of £32,769 store revenue. Of that, automated flows produced £3,555 (11%) and campaigns £9,188 (28%). A separate USD dashboard attributed $33,728 in total, 24% of $142,670 store revenue: $8,881 (6%) from automated flows and $24,847 (17%) from campaigns.',n:'Total email-attributed revenue includes both campaigns and automated flows. The two dashboards are separate stores or reporting periods, not one combined result.',p:'Two Klaviyo performance dashboards',img:[12,13],cap:'Klaviyo GBP and USD performance'},
   {chips:['Segmentation','RFM'],m:'18,326',ms:'customers',t:'Customer segmentation',d:'Retention analysis covered 18,326 customers for a business with $1.32M in annual revenue. The RFM dashboard showed 4,969 at-risk customers and 3,436 lost customers, together about 46% of the base, identifying a clear win-back opportunity.',p:'Retention dashboard · RFM segments',img:[14],cap:'Customer analytics by RFM segment'},
   {chips:['SMS'],m:'$15,142',ms:'top campaign',t:'SMS campaigns with five-figure revenue',d:'Selected seasonal SMS campaigns recorded $15,142, $12,157 and $11,195 in revenue, with the dashboard also documenting conversion rates for each campaign.',n:'These figures are campaign-attributed revenue, not incremental lift.',p:'SMS campaign blasts',img:[15],cap:'SMS campaign blasts'}
  ]},
@@ -955,39 +984,39 @@ const CASES=[
   metrics:[['4.92x','eCommerce ROAS'],['18K+','Lead gen conversions'],['2,469','Meta conversations'],['536','Tracked phone calls']],
   points:['Search, Performance Max and call-focused Google Ads accounts','Meta messaging, purchase and retargeting campaigns','Prospecting with lookalikes and UK market expansion','Auction insights reviewed separately from conversion results'],
   ev:[1,2,6,8],tags:['Google Ads','Meta Ads','PMax','Retargeting'],res:'results-google'},
- {id:'email',t:'Email Lifecycle Automation',sub:'Customer journeys that respond to behavior, not guesswork',d:'Explore lifecycle architecture from welcome to recovery and win-back, alongside email-attributed revenue results.',cover:13,big:'39%',bl:'of store revenue from email',
-  metrics:[['£12,743','Email revenue · 39% of store'],['$33,728','Email revenue · 24% of store'],['8+','Behavior-triggered flows']],
-  points:['Welcome, abandoned cart and browse abandonment flows','Post-purchase, anniversary and interest-based flows','Customer win-back for lapsed buyers','Revenue tracked per flow and per campaign'],
+ {id:'email',t:'Email Lifecycle Automation',sub:'Customer journeys that respond to behavior, not guesswork',d:'Explore lifecycle architecture from welcome to recovery and win-back, alongside email-attributed revenue results. Total email revenue and automated-flow revenue are shown separately, so each figure is read correctly.',cover:13,big:'39%',bl:'of store revenue from email',
+  metrics:[['£12,743','Total email revenue · 39% of store'],['£3,555','Of which automated flows · 11%'],['$33,728','Total email revenue · 24% of store'],['$8,881','Of which automated flows · 6%']],
+  points:['Welcome, abandoned cart and browse abandonment flows','Post-purchase, anniversary and interest-based flows','Customer win-back for lapsed buyers','Total email-attributed revenue reported separately from automated-flow revenue: campaigns made up £9,188 and $24,847 of the totals'],
   ev:[11,12,13],tags:['Klaviyo','Flows','Segmentation'],res:'results-email'}
 ];
 
 const INDUSTRIES=[
- {t:'eCommerce & DTC',ic:'<path d="M6 10h28l-3 16H10z"/><circle cx="13" cy="32" r="2.5"/><circle cx="28" cy="32" r="2.5"/><path d="M6 10 4 5H1"/>',x:['Shopping and Performance Max','Meta prospecting','Catalog retargeting','Checkout CRO','Abandoned cart recovery','Customer retention'],cs:'email'},
- {t:'SaaS & B2B Services',ic:'<rect x="6" y="12" width="28" height="20" rx="2"/><path d="M15 12V8h10v4M6 20h28"/>',x:['High-intent search','LinkedIn campaigns','Lead magnets','CRM pipelines','Sales follow-up','Outbound prospecting'],cs:'ads'},
- {t:'Health-tech & Education',ic:'<path d="M20 34s-12-7-12-17a7 7 0 0 1 12-4 7 7 0 0 1 12 4c0 10-12 17-12 17z"/><path d="M14 20h4l2-4 2 7 2-3h3"/>',x:['Trust-building content','Intent-driven lead generation','Demo or consultation funnels','Audience research','Landing page clarity'],cs:'linkedin'},
- {t:'Agencies, Consultants & Local Businesses',ic:'<path d="M20 34s-11-9-11-18a11 11 0 0 1 22 0c0 9-11 18-11 18z"/><circle cx="20" cy="16" r="4"/>',x:['Search visibility','Phone-call tracking','Lead qualification','Appointment booking','Automated follow-up'],cs:'ads'}
+ {t:'eCommerce & Retail',ic:'<path d="M6 10h28l-3 16H10z"/><circle cx="13" cy="32" r="2.5"/><circle cx="28" cy="32" r="2.5"/><path d="M6 10 4 5H1"/>',x:['Paid shopping campaigns','Customer acquisition','Abandoned-cart recovery','Email and SMS automation','Repeat purchases','Retention'],cs:'email'},
+ {t:'SaaS & B2B Software',ic:'<rect x="6" y="9" width="28" height="19" rx="2"/><path d="M14 34h12M20 28v6M12 18l4 3-4 3M19 24h8"/>',x:['Qualified lead generation','LinkedIn Ads','Outbound prospecting','CRM workflows','Demo funnels','Lead nurturing'],cs:'ads'},
+ {t:'EdTech & Online Education',ic:'<path d="M3 15 20 8l17 7-17 7z"/><path d="M10 18v8c0 2 4.5 4 10 4s10-2 10-4v-8M37 15v9"/>',x:['Course enrollment campaigns','Parent and student audience targeting','Landing page optimization','Inquiry nurturing','Enrollment funnels'],cs:'landing'},
+ {t:'Beauty & Wellness',ic:'<path d="M20 6c3 6 3 10 0 14-3-4-3-8 0-14zM20 20c5-4 10-4 14-1-4 4-9 5-14 1zM20 20c-5-4-10-4-14-1 4 4 9 5 14 1zM20 20v14"/>',x:['Audience acquisition','Meta Ads','Promotional campaigns','Appointment or product conversion funnels','Customer re-engagement'],cs:'ads'},
+ {t:'Travel & Tourism',ic:'<path d="M5 22 35 9l-6 22-9-7-4 6v-8l13-10"/>',x:['Destination and service campaigns','Inquiry generation','Booking funnels','Remarketing','Automated follow-ups'],cs:'ads'},
+ {t:'Health & Fitness',ic:'<path d="M4 20h4M32 20h4M8 14v12M32 14v12M11 11v18M29 11v18M11 20h18"/>',x:['Membership and program lead generation','Paid advertising','Appointment funnels','CRM nurturing','Retention communication'],cs:'linkedin'},
+ {t:'Agencies, Startups & Local Services',ic:'<path d="M20 34s-11-9-11-18a11 11 0 0 1 22 0c0 9-11 18-11 18z"/><circle cx="20" cy="16" r="4"/>',x:['Outsourced growth marketing','Lead generation','Campaign management','CRM integration','Conversion optimization'],cs:'ads'}
 ];
 
 const TOOLS=[
- ['Paid media','#4B6B95',['Google Ads','Microsoft Advertising','Google Merchant Center','Search','Shopping','Performance Max','Demand Gen','YouTube','Meta Ads Manager','LinkedIn Campaign Manager','Meta Commerce Manager']],
- ['Email & retention','#C2A878',['Klaviyo','Omnisend','Patch Retention','Brevo','Mailchimp','MailerLite','ActiveCampaign','SendGrid','GoHighLevel','HubSpot']],
- ['Analytics & tracking','#0B1B2F',['GA4','Google Tag Manager','Looker Studio','Google Search Console','Meta Pixel','Conversions API','Meta Events Manager','Power BI','Excel','Google Sheets','PageSpeed Insights','Microsoft Clarity']],
- ['CRM & integrations','#4B6B95',['GoHighLevel','HubSpot CRM','Zoho CRM','Pipedrive','Microsoft Dynamics 365','Zapier','Make','Google Apps Script']],
- ['Cold outreach & prospecting','#C2A878',['Instantly','Smartlead','Apollo','Lemlist','Hunter','Snov.io','Clay','PhantomBuster','Apify','LinkedIn Sales Navigator','Google Maps']],
- ['Commerce & funnels','#0B1B2F',['Shopify','WooCommerce','WordPress','Elementor','Webflow','ClickFunnels','Simprosys','Calendly','Dubb']],
- ['SEO & research','#4B6B95',['SEMrush','Ahrefs','Screaming Frog','Yoast SEO','Rank Math','Google Keyword Planner']],
- ['Social & creative','#C2A878',['Meta Business Suite','Facebook','Instagram','LinkedIn','YouTube','Hootsuite','Skool','Canva','Figma']],
- ['Messaging & communications','#0B1B2F',['Twilio','360dialog','Gupshup','Bird','Infobip','Sinch','ClickSend','MessageMedia','JustCall']],
- ['AI & productivity','#4B6B95',['ChatGPT','Claude','Microsoft 365 Copilot','Copilot Studio']],
- ['Project management','#C2A878',['ClickUp','Asana','Monday.com','Trello','Slack','Google Workspace','Google Meet','Zoom','Microsoft Teams']]
+ ['Paid Advertising','#4B6B95','Reach high-intent buyers and new audiences',['Google Ads','Microsoft Advertising','Google Merchant Center','Performance Max','Demand Gen','YouTube Ads','Meta Ads Manager','Meta Commerce Manager','LinkedIn Campaign Manager','Google Keyword Planner','Simprosys']],
+ ['B2B Prospecting','#C2A878','Find and enrich the right decision-makers',['Apollo.io','Clay','Lusha','LinkedIn Sales Navigator','Snov.io','PhantomBuster','Apify','Google Maps']],
+ ['Cold Email & Deliverability','#0B1B2F','Reach inboxes, not spam folders',['Instantly','Smartlead','Lemlist','Hunter','SendGrid','Brevo']],
+ ['Email & SMS Lifecycle Marketing','#4B6B95','Turn first purchases into repeat customers',['Klaviyo','Omnisend','Patch Retention','Mailchimp','MailerLite','ActiveCampaign','Twilio','ClickSend','Infobip','Sinch','Bird','360dialog','Gupshup']],
+ ['CRM & Automation','#C2A878','Route, follow up and nurture every lead',['GoHighLevel','HubSpot','Zoho CRM','Pipedrive','Microsoft Dynamics 365','Zapier','Make','Google Apps Script','Calendly','JustCall']],
+ ['CRO & Funnels','#0B1B2F','Remove friction between the click and the sale',['Shopify','WooCommerce','WordPress','Elementor','Webflow','ClickFunnels','Microsoft Clarity','PageSpeed Insights']],
+ ['Analytics & Attribution','#4B6B95','Know what each channel really contributes',['GA4','Google Tag Manager','Meta Pixel','Conversions API','Meta Events Manager','Google Search Console','SEMrush','Ahrefs','Screaming Frog']],
+ ['Creative & Reporting','#C2A878','Make the assets, then explain the results',['Looker Studio','Power BI','Excel','Google Sheets','Canva','Figma','Meta Business Suite','Hootsuite','ChatGPT','Claude']]
 ];
 
 const STEPS=[
- ['Audit','Review tracking integrity, existing campaign structure, spend allocation, search demand, conversion paths and CRM follow-up.'],
- ['Prioritize','Identify the highest-impact gaps, agree on business outcomes and select channels based on buying intent and available resources.'],
- ['Build','Develop campaign architecture, audience and creative tests, landing pages, analytics events, CRM routing and lifecycle automations.'],
- ['Optimize','Evaluate search terms, creative performance, conversion quality, cost per acquisition and funnel leakage. Adjust with a clear hypothesis.'],
- ['Report','Share what changed, what the evidence shows, what remains uncertain and what action comes next.']
+ ['Discover & Audit','Understand business objectives, existing campaigns, customer journeys, acquisition costs, conversion tracking, and retention performance.'],
+ ['Build the Growth Strategy','Identify the right acquisition channels, conversion opportunities, CRM workflows, and lifecycle marketing priorities.'],
+ ['Execute & Integrate','Launch campaigns, implement tracking, improve funnels, and connect lead nurturing or customer retention systems.'],
+ ['Measure & Optimize','Analyze campaign results, conversion rates, customer behavior, revenue attribution, and retention opportunities.'],
+ ['Refine & Grow','Use performance insights to improve the connected growth system and guide future investment.']
 ];
 
 /* ---------- lightbox ---------- */
@@ -1004,7 +1033,7 @@ $('#lb').addEventListener('click',e=>{if(e.target.id==='lb'||e.target.classList.
 document.addEventListener('keydown',e=>{if($('#lb').hidden)return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')$('#lbPrev').click();if(e.key==='ArrowRight')$('#lbNext').click()});
 
 /* ---------- services ---------- */
-$('#svGrid').innerHTML=SERVICES.map((s,i)=>{const cs=CASES.find(c=>c.id===s.c);return `<article class="sv"><div class="sv-top"><div class="sv-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${s.ic}</svg></div><span class="sv-no">0${i+1}</span></div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p><div class="sv-links"><a class="link-arrow" href="#${s.r}">${s.rl||'See results'} ${ARR}</a><a class="link-arrow" href="#case-${cs.id}">Case study ${ARR}</a></div></article>`}).join('');
+$('#svGrid').innerHTML=SERVICES.map((s,i)=>`<article class="sv"><div class="sv-top"><div class="sv-ico"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${s.ic}</svg></div><span class="sv-no">0${i+1}</span></div><span class="sv-k sv-k-${s.k.toLowerCase()}">${esc(s.k)}</span><h3>${esc(s.t)}</h3><p class="sv-lead">${esc(s.l)}</p><p>${esc(s.d)}</p><div class="sv-links">${s.a.map(a=>`<a class="link-arrow" href="${a[0]}">${esc(a[1])} ${ARR}</a>`).join('')}</div></article>`).join('');
 
 /* ---------- results ---------- */
 const RKEYS=Object.keys(RESULTS);
@@ -1055,12 +1084,12 @@ $('#indList').addEventListener('mouseover',e=>{const b=e.target.closest('[data-i
 renderInd(0);
 
 /* ---------- toolkit ---------- */
-const TOTAL=TOOLS.reduce((a,t)=>a+t[2].length,0);
+const TOTAL=TOOLS.reduce((a,t)=>a+t[3].length,0);
 function renderTools(q){
   q=(q||'').trim().toLowerCase(); let hits=0,groups=0;
-  $('#tkGrid').innerHTML=TOOLS.map(([n,c,xs])=>{const m=q?xs.filter(x=>x.toLowerCase().includes(q)).length:xs.length; if(q&&m){hits+=m;groups++}
-    return `<div class="tk${q&&!m?' dim':''}" style="--c:${c}"><h3><span>${esc(n)}</span><i>${xs.length}</i></h3><div class="tk-list">${xs.map(x=>`<span class="${q&&x.toLowerCase().includes(q)?'hit':''}">${esc(x)}</span>`).join('')}</div></div>`}).join('');
-  $('#tkCount').textContent=q?(hits?`${hits} match${hits>1?'es':''} in ${groups} categor${groups>1?'ies':'y'}`:'No matching tool'):`${TOTAL} tools · ${TOOLS.length} categories`;
+  $('#tkGrid').innerHTML=TOOLS.map(([n,c,why,xs])=>{const m=q?xs.filter(x=>x.toLowerCase().includes(q)).length:xs.length; if(q&&m){hits+=m;groups++}
+    return `<div class="tk${q&&!m?' dim':''}" style="--c:${c}"><h3><span>${esc(n)}</span><i>${xs.length}</i></h3><p class="tk-why">${esc(why)}</p><div class="tk-list">${xs.map(x=>`<span class="${q&&x.toLowerCase().includes(q)?'hit':''}">${esc(x)}</span>`).join('')}</div></div>`}).join('');
+  $('#tkCount').textContent=q?(hits?`${hits} match${hits>1?'es':''} in ${groups} categor${groups>1?'ies':'y'}`:'No matching tool'):`${TOOLS.length} business functions · ${TOTAL} tools`;
 }
 $('#tkSearch').addEventListener('input',e=>renderTools(e.target.value));
 renderTools('');
